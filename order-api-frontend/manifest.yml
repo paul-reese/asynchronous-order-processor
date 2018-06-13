@@ -1,0 +1,11 @@
+---
+applications:
+- name: order-api-frontend
+  memory: 1024M
+  host: order-api-frontend
+  instances: 2
+  buildpack: java_buildpack_offline
+  path: target/order-api-frontend-0.0.1-SNAPSHOT.jar
+  services:
+  - service-registry
+  - rabbitmq-server 

@@ -1,0 +1,12 @@
+---
+applications:
+- name: order-status-service
+  memory: 1024M
+  host: order-status-service
+  instances: 1
+  buildpack: java_buildpack_offline
+  path: target/order-status-service-0.0.1-SNAPSHOT.jar
+  services:
+  - service-registry
+  - rabbitmq-server
+  #- order-status-db

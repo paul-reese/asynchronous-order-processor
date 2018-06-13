@@ -1,0 +1,11 @@
+---
+applications:
+- name: message-processor
+  memory: 1024M
+  host: message-processor
+  instances: 1
+  buildpack: java_buildpack_offline
+  path: target/message-processor-0.0.1-SNAPSHOT.jar
+  services:
+  - rabbitmq-server
+  - legacyorderservice 

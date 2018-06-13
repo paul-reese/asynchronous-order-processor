@@ -1,0 +1,9 @@
+---
+applications:
+- name: legacy-order-management
+  memory: 1024M
+  host: legacy-order-management
+  instances: 1
+  buildpack: java_buildpack_offline
+  path: target/legacy-order-management-0.0.1-SNAPSHOT.jar
+
