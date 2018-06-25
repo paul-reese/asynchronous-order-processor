@@ -1,0 +1,4 @@
+io/pivotal/sample/orders/controller/OrderController.class
+io/pivotal/sample/orders/service/OrderQueryService.class
+io/pivotal/sample/orders/OrderApiFrontendApplication.class
+io/pivotal/sample/orders/service/MessageSenderService.class
